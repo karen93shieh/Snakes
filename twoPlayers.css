@@ -1,0 +1,12 @@
+.tail, .tailTwo{
+	height:50px;
+	width:50px;
+	position:absolute;
+}
+
+img{
+	height:50px;
+	width:50px;
+	position:absolute;
+	z-index:2;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Snakes</title>
+    <link rel="stylesheet" type ="text/css" href="menu.css">
+     <link rel="stylesheet" type ="text/css" href="onePlayer.css">
+	 <link rel="stylesheet" type ="text/css" href="twoPlayers.css">
+	 <link rel="stylesheet" type ="text/css" href="table.css">
+    <script src="menu.js"></script>
+    <script src="onePlayer.js"></script>
+	<script src="twoPlayers.js"></script>
+	<script src="table.js"></script>
+	<script src="twoPlayersTime.js"></script>
+  </head>
+  <body onkeydown="keyDownOne(event), keyDownTwo(event), keyDownTwoTime(event)">
+		<img src="https://icon-library.net/images/back-button-icon-png/back-button-icon-png-4.jpg" alt="back" id="back" onclick="backClicked()">
+		<div id="mainPagesWrapper">
+			<div id="title">Snakes</div>
+			<input type="button" value="1 Person" onclick="" class="mainPages" id="onePerson">
+			<input type="button" value="2 People" onclick="" class="mainPages" id="twoPeople">
+			<input type="button" value="Timer Mode" onclick="disappear(),initTwoSnakesTime(), initTable('time')" class="mainPages" id="timerMode">
+			<input type="button" value="Points Mode" onclick="disappear(),initTwoSnakes('points'), initTable('points')" class="mainPages" id="pointsMode">  
+			<input type="button" value="Instruction" onclick="" class="mainPages" id="instructionTwoP">
+			<input type="button" value="Classic Mode" onclick="disappear(),initOneSnake()" class="mainPages" id="classicMode">
+			<input type="button" value="Instruction" onclick="" class="mainPages" id="instructionOneP">
+			<div id="instructionWrapper">
+				<div id="instructionOne">
+					1. WASD or arrow <br>&nbsp;&nbsp;&nbsp; keys to move.<br>
+					2. Apples make you <br>&nbsp;&nbsp;&nbsp; longer.<br>
+					3. Each apple is one &nbsp;&nbsp;&nbsp; point.<br>
+					4. Survive for as long &nbsp;&nbsp;&nbsp; as possible.<br>
+					5. Choose the size  <br>&nbsp;&nbsp;&nbsp;&nbsp;of the webpage
+				</div>
+				<div id="instructionTwoTime">
+					<img src="https://image.flaticon.com/icons/png/512/130/130884.png" alt="next" id="nextInstruction" onclick="pageClicked('nextInstruction')">
+					<span>Timer Mode:</span><br>
+					1. P1: WASD &nbsp&nbsp&nbsp P2: ↑↓→←<br>
+					2. Time Limit: 3 minutes<br>
+					3. Objective: Make the <br> &nbsp;&nbsp;&nbsp;opponent collide into your <br>&nbsp;&nbsp;&nbsp;snake, +1 point <br>
+					<span class="sideNotes">
+					* Eating an apple will increase your<br>&nbsp;&nbsp;&nbsp; tail length<br>
+					* Collision with your own tail is<br>&nbsp;&nbsp;&nbsp; opponent's point<br>
+					* A head on collision will end in a tie<br>
+					* A head on collision will end in a tie<br>
+					* Choose the size of the webpage<br>
+					</span>
+				</div>
+				<div id="instructionTwoPoint">
+					<img src="https://image.flaticon.com/icons/png/512/130/130882.png" alt="back" id="backInstruction" onclick="pageClicked('backInstruction')">
+					<span>Points Mode:</span><br>
+					1. P1: WASD &nbsp&nbsp&nbsp P2: ↑↓→←<br>
+					2. Points: 3 points to end the <br>&nbsp;&nbsp;&nbsp; game<br>
+					3. Objective: Make the <br> &nbsp;&nbsp;&nbsp;opponent collide into your <br>&nbsp;&nbsp;&nbsp;snake, +1 point <br>
+					<span class="sideNotes">
+					* Eating an apple will increase your<br>&nbsp;&nbsp;&nbsp; tail length<br>
+					* Collision with your own tail is<br>&nbsp;&nbsp;&nbsp; opponent's point<br>
+					* A head on collision will end in a tie<br>
+					* Choose the size of the webpage<br>
+					</span>
+				</div>
+			</div>
+		</div>
+   <img id="apple"src="apple.png", alt="apple">
+	<div id = "singlePlayerPoints">
+				<div> Score:&nbsp;&nbsp;<span id="points">0</span></div>
+			</div>
+			<table id = "timerTable"> 
+			<colgroup>
+				<col width = "33%">
+				<col width = "34%">
+				<col width = "33%">
+			</colgroup>
+				<tr class = "labels"> 
+					<td id = "ScoreOneLabel"> Player One Score </td>
+					<td id = "TimerLabel"> Timer </td>
+					<td id = "ScoreTwoLabel"> Player Two Score </td>
+				</tr>
+				<tr id = "timerTableScores"> 
+					<td class = "timerTableInfo" id = "snakeOneScoreV1"> </td>
+					<td class = "timerTableInfo" id = "timer"> </td>
+					<td class = "timerTableInfo" id ="snakeTwoScoreV1"> </td>
+				</tr> 
+			</table> 
+      <table id = "scoreboard"> 
+				<colgroup>
+					<col width = "33%">
+					<col width = "34%">
+					<col width = "33%">
+				</colgroup>
+				<tr class = "labels"> 
+					<td id = "ScoreOneLabel"> Player One Score </td>
+					<td id = "ScoreTwoLabel"> Player Two Score </td>
+				</tr>
+				<tr id = "scores"> 
+					<td class = "snakeOneScore" id ="snakeOneScoreV2"> </td> 
+					<td class = "snakeTwoScore" id ="snakeTwoScoreV2"> </td>
+				</tr> 
+        </table>
+		
+  </body>
+</html>

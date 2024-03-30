@@ -1,0 +1,105 @@
+#singlePlayerPoints {
+	position: absolute;
+	padding: 15px;
+	background-color: lightyellow;
+	width: 8%;
+	height: 40px;
+	border: inset 5px gold;
+	display:none;
+	left:2.5%;
+	top:5px;
+	font-size:1.2em;
+}
+#points {
+	color: black;
+	text-align: center;
+	font-size: 100%;
+	font-size:1.7em;
+	
+}
+#timerTable {
+	position:absolute;
+	left:2.5%;
+	top:5px;
+	display: none;
+	border-collapse: collapse;
+	width: 20%;
+	border: inset 5px gold;
+}
+.labels {
+	background-color: BlanchedAlmond;
+	color: black;
+}
+#ScoreOneLabel {
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#TimerLabel {
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#ScoreTwoLabel { 
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+.timerTableInfo {
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#timerTableScores {
+	background-color: lightYellow; 
+	color: black;
+}
+#snakeOneScoreV1 {
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#timer {
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#snakeTwoScoreV1 { 
+	text-align: center;
+	border: solid 1px gold;
+	padding:10px;
+	color: black;
+	font-size: 100%;
+}
+#scoreboard {
+	position:absolute;
+	left:2.5%;
+	top:5px;
+	display: none;
+	border-collapse: collapse;
+	width: 20%;
+	border: inset 5px gold;
+}
+#scores {
+	background-color: lightYellow;
+}
+#snakeOneScoreV2, #snakeTwoScoreV2 {
+	text-align: center;
+	border: solid 1px gold;
+	padding: 3px;
+	color: black;
+	font-size: 200%;
+	font-size:25px
+}

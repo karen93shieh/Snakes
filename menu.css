@@ -1,0 +1,121 @@
+body{
+	background-image: url("snowflake.gif");
+	background-color:powderBlue;
+}
+#title{
+	font-family:cursive;
+	text-align:center;
+	font-size:5em;
+	margin-top:20px;
+}
+#mainPagesWrapper{
+	border:5px black solid;
+	margin: auto;
+	margin-top:6%;
+	padding:20px;
+	height:500px;
+	width:300px;
+	background-color:LightSalmon;
+
+}
+.mainPages{
+	font-size:3em;
+	background-color:Gold;
+	border: 3px gold inset;
+	text-align:center;
+	padding:5px;
+	margin:auto;
+	display:block;
+}
+#onePerson{
+	margin-top:50px; 
+}
+#twoPeople{
+	margin-top:80px;
+}
+#timerMode{
+	margin-top:35px;
+	display:none;
+}
+#pointsMode{
+	margin-top:45px;
+	display:none;
+}
+#instructionTwoP{
+		
+	margin-top:45px;
+	display:none;
+}
+#classicMode{
+	margin-top:50px;
+	display:none;
+}
+#instructionOneP{
+	margin-top:80px;
+	display:none;
+}
+#back{
+	display:none;
+	height:50px;
+	position:absolute;
+	margin:1%;
+	margin-top:-4.5%;
+}
+#back:hover{
+	box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+#instructionOne{
+	font-family:cursive;
+	font-size:1.5em;
+	padding:4px;
+	display:none;
+}
+#instructionTwoTime{
+	font-family:cursive;
+	font-size:1.1em;
+	padding:4px;
+	display:none;
+}
+#instructionWrapper{
+	border-radius:10px;
+	display:none;
+	margin-top:20px;
+	height:350px;
+	width:250px;
+	background-color:#FEEDED;
+	margin:auto;
+}
+span{
+	font-size:20px;
+
+}
+#nextInstruction{
+	height:20px;
+	width:20px;
+	position:relative;
+	left:223px;
+	top:320px;
+}
+#backInstruction{
+	height:20px;
+	width:20px;
+	position:relative;
+	top:320px;
+	left:0px;
+}
+#instructionTwoPoint{
+	font-family:cursive;
+	font-size:1.1em;
+	padding:4px;
+	display:none;
+}
+.sideNotes{
+	font-size:14px;
+
+}
+#backInstruction:hover{
+	box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+#nextInstruction:hover{
+	box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}

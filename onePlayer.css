@@ -1,0 +1,14 @@
+.boxes{
+  height:50px;
+  width:50px;
+  position:absolute;
+	
+
+			}
+#apple{
+  display:none;
+  height:50px;
+  width:50px;
+  position:absolute;
+  z-index:2;
+}
